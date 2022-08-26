@@ -1,4 +1,4 @@
 baseURL = 'https://h8000572003.github.io/blog-self/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'zh-tw'
+title = '工程師開發紀錄'
 theme = "ananke"

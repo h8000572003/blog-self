@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 工程師開發紀錄</title>
+    <link>https://h8000572003.github.io/blog-self/tags/</link>
+    <description>Recent content in Tags on 工程師開發紀錄</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language><atom:link href="https://h8000572003.github.io/blog-self/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
