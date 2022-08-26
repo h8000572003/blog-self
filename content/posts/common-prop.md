@@ -1,15 +1,15 @@
 ---
-title: "程式設計"
+title: "代碼元件"
 date: 2022-08-10T20:05:29+08:00
+tag: "#java"
+toc: true
 ---
-## 代碼元件
+## 通用型代碼元件
 
 解決問題：處理多來源之代碼元件統一方式處理，
 並提供並提供代碼使用範圍，使用範圍定義為如下
 
-
-
-### 資料範圍(CacheLoader<String, List`<IProperties>`>)
+### 資料範圍(CacheLoader<String, List `<IProperties>`>)
 
 - 來源定義範圍內(例如：原有 A‘B與C 僅能修改此範圍內，且無法刪除，刪除則恢復預設值)
 

@@ -2,20 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://h8000572003.github.io/blog-self/posts/</loc>
+    <loc>https://h8000572003.github.io/blog-self/posts/hcp/</loc>
     <lastmod>2022-08-10T20:05:29+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/posts/common-prop/</loc>
+    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://h8000572003.github.io/blog-self/</loc>
     <lastmod>2022-08-10T20:05:29+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://h8000572003.github.io/blog-self/posts/my-first-post/</loc>
-    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
-  </url><url>
-    <loc>https://h8000572003.github.io/blog-self/posts/introduction/</loc>
-    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
+    <loc>https://h8000572003.github.io/blog-self/posts/</loc>
+    <lastmod>2017-03-02T12:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://h8000572003.github.io/blog-self/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://h8000572003.github.io/blog-self/tags/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
