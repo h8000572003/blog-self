@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>元件 on 工程師開發紀錄</title>
-    <link>https://h8000572003.github.io/blog-self/tags/%E5%85%83%E4%BB%B6/</link>
-    <description>Recent content in 元件 on 工程師開發紀錄</description>
+    <title>文章 on 工程師開發紀錄</title>
+    <link>https://h8000572003.github.io/blog-self/tw/post/</link>
+    <description>Recent content in 文章 on 工程師開發紀錄</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 10 Aug 2022 20:05:29 +0800</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/tags/%E5%85%83%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/tw/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hitachi Content Platform 雲端平台</title>
       <link>https://h8000572003.github.io/blog-self/tw/post/hcp/</link>

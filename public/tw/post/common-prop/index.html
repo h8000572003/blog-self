@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>代碼元件 | 工程師開發紀錄</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="通用型代碼元件 解決問題：處理多來源之代碼元件統一方式處理， 並提供並提供代碼使用範圍，使用範圍定義為如下
+資料範圍(CacheLoader&lt;String, List &lt;IProperties&gt;&gt;) 來源定義範圍內(例如：原有 A‘B與C 僅能修改此範圍內，且無法刪除，刪除則恢復預設值) 使用範圍:程式上使用參數，不得刪除
+可擴充類型(例如：原有 A‘B與C還能增加額外項目) 使用範圍:類似帳號資料，管理者資料無法刪除，且可以增加額外項目
+無基礎值(例如：原有 A‘B與C還能增加額外項目，且能全部刪除) 使用範圍: 資料可以任意清除
+快取方式(IPropertieServiceHolder) 定時清除 使用範圍:資料有可能更新,特定時間清除
+永久使用快取 使用範圍:資料永久不改變，沒有清除需要
+不使用快取 使用範圍:資料強調正確性，可不使用快取
+詳細說明參考 https://github.com/h8000572003/coomon-prooptics">
+    <meta name="generator" content="Hugo 0.101.0" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/blog-self/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="代碼元件" />
+<meta property="og:description" content="通用型代碼元件 解決問題：處理多來源之代碼元件統一方式處理， 並提供並提供代碼使用範圍，使用範圍定義為如下
+資料範圍(CacheLoader&lt;String, List &lt;IProperties&gt;&gt;) 來源定義範圍內(例如：原有 A‘B與C 僅能修改此範圍內，且無法刪除，刪除則恢復預設值) 使用範圍:程式上使用參數，不得刪除
+可擴充類型(例如：原有 A‘B與C還能增加額外項目) 使用範圍:類似帳號資料，管理者資料無法刪除，且可以增加額外項目
+無基礎值(例如：原有 A‘B與C還能增加額外項目，且能全部刪除) 使用範圍: 資料可以任意清除
+快取方式(IPropertieServiceHolder) 定時清除 使用範圍:資料有可能更新,特定時間清除
+永久使用快取 使用範圍:資料永久不改變，沒有清除需要
+不使用快取 使用範圍:資料強調正確性，可不使用快取
+詳細說明參考 https://github.com/h8000572003/coomon-prooptics" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://h8000572003.github.io/blog-self/tw/post/common-prop/" /><meta property="article:section" content="tw" />
+<meta property="article:published_time" content="2022-08-10T20:05:29+08:00" />
+<meta property="article:modified_time" content="2022-08-10T20:05:29+08:00" />
+
+<meta itemprop="name" content="代碼元件">
+<meta itemprop="description" content="通用型代碼元件 解決問題：處理多來源之代碼元件統一方式處理， 並提供並提供代碼使用範圍，使用範圍定義為如下
+資料範圍(CacheLoader&lt;String, List &lt;IProperties&gt;&gt;) 來源定義範圍內(例如：原有 A‘B與C 僅能修改此範圍內，且無法刪除，刪除則恢復預設值) 使用範圍:程式上使用參數，不得刪除
+可擴充類型(例如：原有 A‘B與C還能增加額外項目) 使用範圍:類似帳號資料，管理者資料無法刪除，且可以增加額外項目
+無基礎值(例如：原有 A‘B與C還能增加額外項目，且能全部刪除) 使用範圍: 資料可以任意清除
+快取方式(IPropertieServiceHolder) 定時清除 使用範圍:資料有可能更新,特定時間清除
+永久使用快取 使用範圍:資料永久不改變，沒有清除需要
+不使用快取 使用範圍:資料強調正確性，可不使用快取
+詳細說明參考 https://github.com/h8000572003/coomon-prooptics"><meta itemprop="datePublished" content="2022-08-10T20:05:29+08:00" />
+<meta itemprop="dateModified" content="2022-08-10T20:05:29+08:00" />
+<meta itemprop="wordCount" content="26">
+<meta itemprop="keywords" content="元件,scene," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="代碼元件"/>
+<meta name="twitter:description" content="通用型代碼元件 解決問題：處理多來源之代碼元件統一方式處理， 並提供並提供代碼使用範圍，使用範圍定義為如下
+資料範圍(CacheLoader&lt;String, List &lt;IProperties&gt;&gt;) 來源定義範圍內(例如：原有 A‘B與C 僅能修改此範圍內，且無法刪除，刪除則恢復預設值) 使用範圍:程式上使用參數，不得刪除
+可擴充類型(例如：原有 A‘B與C還能增加額外項目) 使用範圍:類似帳號資料，管理者資料無法刪除，且可以增加額外項目
+無基礎值(例如：原有 A‘B與C還能增加額外項目，且能全部刪除) 使用範圍: 資料可以任意清除
+快取方式(IPropertieServiceHolder) 定時清除 使用範圍:資料有可能更新,特定時間清除
+永久使用快取 使用範圍:資料永久不改變，沒有清除需要
+不使用快取 使用範圍:資料強調正確性，可不使用快取
+詳細說明參考 https://github.com/h8000572003/coomon-prooptics"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  <header class="cover bg-top" style="background-image: url('https://h8000572003.github.io/blog-self/images/gohugo-default-sample-hero-image.jpg');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/blog-self/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        工程師開發紀錄
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/blog-self/tw/post/" title="文章 頁">
+              文章
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/blog-self/tw/about/" title="關於 頁">
+              關於
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/blog-self/tw/tech/" title="內功 頁">
+              內功
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/blog-self/tw/tags/" title="標籤 頁">
+              標籤
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/blog-self/tw/" title="技術 頁">
+              技術
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    <a href="https://github.com/h8000572003" target="_blank" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" rel="noopener" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">代碼元件</h1>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        文章
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">代碼元件</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-08-10T20:05:29+08:00">August 10, 2022</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="通用型代碼元件">通用型代碼元件</h2>
+<p>解決問題：處理多來源之代碼元件統一方式處理，
+並提供並提供代碼使用範圍，使用範圍定義為如下</p>
+<h3 id="資料範圍cacheloaderstring-list-iproperties">資料範圍(CacheLoader&lt;String, List <code>&lt;IProperties&gt;</code>&gt;)</h3>
+<ul>
+<li>來源定義範圍內(例如：原有 A‘B與C 僅能修改此範圍內，且無法刪除，刪除則恢復預設值)</li>
+</ul>
+<blockquote>
+<p>使用範圍:程式上使用參數，不得刪除</p>
+</blockquote>
+<ul>
+<li>可擴充類型(例如：原有 A‘B與C還能增加額外項目)</li>
+</ul>
+<blockquote>
+<p>使用範圍:類似帳號資料，管理者資料無法刪除，且可以增加額外項目</p>
+</blockquote>
+<ul>
+<li>無基礎值(例如：原有 A‘B與C還能增加額外項目，且能全部刪除)</li>
+</ul>
+<blockquote>
+<p>使用範圍: 資料可以任意清除</p>
+</blockquote>
+<h3 id="快取方式ipropertieserviceholder">快取方式(IPropertieServiceHolder)</h3>
+<ul>
+<li>定時清除</li>
+</ul>
+<blockquote>
+<p>使用範圍:資料有可能更新,特定時間清除</p>
+</blockquote>
+<ul>
+<li>永久使用快取</li>
+</ul>
+<blockquote>
+<p>使用範圍:資料永久不改變，沒有清除需要</p>
+</blockquote>
+<ul>
+<li>不使用快取</li>
+</ul>
+<blockquote>
+<p>使用範圍:資料強調正確性，可不使用快取</p>
+</blockquote>
+<h3 id="詳細說明參考">詳細說明參考</h3>
+<p><a href="https://github.com/h8000572003/coomon-prooptics">https://github.com/h8000572003/coomon-prooptics</a></p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/%E5%85%83%E4%BB%B6" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">元件</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/scene" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">scene</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">相關內容</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/blog-self/tw/post/hcp/">Hitachi Content Platform 雲端平台</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://h8000572003.github.io/blog-self/" >
+    &copy;  工程師開發紀錄 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    <a href="https://github.com/h8000572003" target="_blank" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" rel="noopener" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
