@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scene on 阿忠程式之路</title>
+    <link>https://gohugo-theme-ananke.pages.dev/tags/scene/</link>
+    <description>Recent content in scene on 阿忠程式之路</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 10 Aug 2022 20:05:29 +0800</lastBuildDate><atom:link href="https://gohugo-theme-ananke.pages.dev/tags/scene/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>代碼元件</title>
+      <link>https://gohugo-theme-ananke.pages.dev/post/common-prop/</link>
+      <pubDate>Wed, 10 Aug 2022 20:05:29 +0800</pubDate>
+      
+      <guid>https://gohugo-theme-ananke.pages.dev/post/common-prop/</guid>
+      <description>通用型代碼元件 解決問題：處理多來源之代碼元件統一方式處理， 並提供並提供代碼使用範圍，使用範圍定義為如下
+資料範圍(CacheLoader&amp;lt;String, List &amp;lt;IProperties&amp;gt;&amp;gt;) 來源定義範圍內(例如：原有 A‘B與C 僅能修改此範圍內，且無法刪除，刪除則恢復預設值) 使用範圍:程式上使用參數，不得刪除
+可擴充類型(例如：原有 A‘B與C還能增加額外項目) 使用範圍:類似帳號資料，管理者資料無法刪除，且可以增加額外項目
+無基礎值(例如：原有 A‘B與C還能增加額外項目，且能全部刪除) 使用範圍: 資料可以任意清除
+快取方式(IPropertieServiceHolder) 定時清除 使用範圍:資料有可能更新,特定時間清除
+永久使用快取 使用範圍:資料永久不改變，沒有清除需要
+不使用快取 使用範圍:資料強調正確性，可不使用快取
+詳細說明參考 https://github.com/h8000572003/coomon-prooptics</description>
+    </item>
+    
+    <item>
+      <title>Chapter IV: Master Jacques Coppenole</title>
+      <link>https://gohugo-theme-ananke.pages.dev/post/chapter-4/</link>
+      <pubDate>Wed, 12 Apr 2017 11:14:48 -0400</pubDate>
+      
+      <guid>https://gohugo-theme-ananke.pages.dev/post/chapter-4/</guid>
+      <description>While the pensioner of Ghent and his eminence were exchanging very low bows and a few words in voices still lower, a man of lofty stature, with a large face and broad shoulders, presented himself, in order to enter abreast with Guillaume Rym; one would have pronounced him a bull-dog by the side of a fox. His felt doublet and leather jerkin made a spot on the velvet and silk which surrounded him.</description>
+    </item>
+    
+    <item>
+      <title>Chapter I: The Grand Hall</title>
+      <link>https://gohugo-theme-ananke.pages.dev/post/chapter-1/</link>
+      <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
+      
+      <guid>https://gohugo-theme-ananke.pages.dev/post/chapter-1/</guid>
+      <description>Three hundred and forty-eight years, six months, and nineteen days ago to-day, the Parisians awoke to the sound of all the bells in the triple circuit of the city, the university, and the town ringing a full peal.
+The sixth of January, 1482, is not, however, a day of which history has preserved the memory. There was nothing notable in the event which thus set the bells and the bourgeois of Paris in a ferment from early morning.</description>
+    </item>
+    
+  </channel>
+</rss>

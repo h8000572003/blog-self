@@ -2,10 +2,9 @@
 title: "Hitachi Content Platform 雲端平台"
 date: 2022-08-10T20:05:29+08:00
 description: "歡迎同仁互相討論，若發現文章有問題請寫信告知"
-tags: ['tag1', 'tag2']
-categories: ['cat1']
+tags: ["元件"]
 ---
-## [Hitachi Content Platform](https://www.hitachivantara.com/en-us/products/data-storage/object-storage/content-platform.html)
+## Hitachi Content Platform
 
 此為Hitachi提供之檔案放置雲端平台之解決方案，參考API說明書，撰寫該元件之共用元件建立
 
