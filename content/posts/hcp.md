@@ -1,9 +1,9 @@
 ---
 title: "Hitachi Content Platform 雲端平台"
 date: 2022-08-10T20:05:29+08:00
-tag: "#java"
-toc: true
 description: "歡迎同仁互相討論，若發現文章有問題請寫信告知"
+tags: ['tag1', 'tag2']
+categories: ['cat1']
 ---
 ## [Hitachi Content Platform](https://www.hitachivantara.com/en-us/products/data-storage/object-storage/content-platform.html)
 
@@ -79,7 +79,6 @@ void test_put_file_then_put_then_ok() throws IOException, URISyntaxException {
 }
 ```
 
-
 ### maven設定
 
 <dependency>
@@ -87,7 +86,6 @@ void test_put_file_then_put_then_ok() throws IOException, URISyntaxException {
   <artifactId>hcp</artifactId>
   <version>0.0.5</version>
 </dependency>
-
 
 ```
 <dependency>

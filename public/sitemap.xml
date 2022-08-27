@@ -2,7 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://h8000572003.github.io/blog-self/categories/cat1/</loc>
+    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/categories/</loc>
+    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://h8000572003.github.io/blog-self/posts/hcp/</loc>
+    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/tags/tag1/</loc>
+    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/tags/tag2/</loc>
+    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/tags/</loc>
     <lastmod>2022-08-10T20:05:29+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -19,14 +44,6 @@
   </url><url>
     <loc>https://h8000572003.github.io/blog-self/posts/</loc>
     <lastmod>2017-03-02T12:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://h8000572003.github.io/blog-self/categories/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://h8000572003.github.io/blog-self/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

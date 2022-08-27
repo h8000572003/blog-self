@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cat1 on 工程師開發紀錄</title>
+    <link>https://h8000572003.github.io/blog-self/categories/cat1/</link>
+    <description>Recent content in cat1 on 工程師開發紀錄</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 10 Aug 2022 20:05:29 +0800</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/categories/cat1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hitachi Content Platform 雲端平台</title>
+      <link>https://h8000572003.github.io/blog-self/posts/hcp/</link>
+      <pubDate>Wed, 10 Aug 2022 20:05:29 +0800</pubDate>
+      
+      <guid>https://h8000572003.github.io/blog-self/posts/hcp/</guid>
+      <description>Hitachi Content Platform 此為Hitachi提供之檔案放置雲端平台之解決方案，參考API說明書，撰寫該元件之共用元件建立
+提供以下服務
+新增 刪除 更新 查詢 查詢範例 @Test void test_get_file_then_HcpGet_then_file() { HcpGet hcpDownloadInfo = new HcpGet(); String restPath = HcpUtil.toRestPath(&amp;#34;x.pdf&amp;#34;, &amp;#34;1&amp;#34;, &amp;#34;2&amp;#34;, &amp;#34;3&amp;#34;, &amp;#34;4&amp;#34;); hcpDownloadInfo.setPath(restPath); GetHcpInfo execute; try { execute = hcpService.execute(hcpDownloadInfo); String size = execute.getSize(); assertThat(size).isNotBlank(); } catch (HcpCodeExcepton e) { fail(&amp;#34;&amp;#34;); } } 刪除範例 @Test void test_delet_file_then_HcpGet_then_ok() { HcpDelete cmd = new HcpDelete(); String restPath = HcpUtil.toRestPath(&amp;#34;x.pdf&amp;#34;, &amp;#34;1&amp;#34;, &amp;#34;2&amp;#34;, &amp;#34;3&amp;#34;, &amp;#34;4&amp;#34;); cmd.setPath(restPath); try { BaseHcpInfo execute = hcpService.</description>
+    </item>
+    
+  </channel>
+</rss>

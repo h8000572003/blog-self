@@ -1,8 +1,7 @@
 ---
 title: "代碼元件"
 date: 2022-08-10T20:05:29+08:00
-tag: "#java"
-toc: true
+tags: ['tag1', 'tag2']
 ---
 ## 通用型代碼元件
 
