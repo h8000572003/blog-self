@@ -2,37 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://h8000572003.github.io/blog-self/tw/post/tdd/</loc>
+    <lastmod>2022-08-30T08:55:48+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/</loc>
+    <lastmod>2022-08-30T08:55:48+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/tw/</loc>
+    <lastmod>2022-08-30T08:55:48+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/tags/</loc>
+    <lastmod>2022-08-29T23:05:43+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/tw/post/telegram/</loc>
+    <lastmod>2022-08-29T23:05:43+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/tags/%E5%85%83%E4%BB%B6/</loc>
+    <lastmod>2022-08-29T23:05:43+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/tags/architecture/</loc>
+    <lastmod>2022-08-27T20:05:29+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://h8000572003.github.io/blog-self/tw/tech/solid/</loc>
+    <lastmod>2022-08-27T20:05:29+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://h8000572003.github.io/blog-self/tw/post/hcp/</loc>
     <lastmod>2022-08-10T20:05:29+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://h8000572003.github.io/blog-self/tags/scene/</loc>
-    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://h8000572003.github.io/blog-self/tags/</loc>
-    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://h8000572003.github.io/blog-self/</loc>
-    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://h8000572003.github.io/blog-self/tags/%E5%85%83%E4%BB%B6/</loc>
-    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://h8000572003.github.io/blog-self/tw/post/common-prop/</loc>
-    <lastmod>2022-08-10T20:05:29+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://h8000572003.github.io/blog-self/tw/</loc>
     <lastmod>2022-08-10T20:05:29+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -43,11 +58,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://h8000572003.github.io/blog-self/tw/post/</loc>
-    <lastmod>2017-03-02T12:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://h8000572003.github.io/blog-self/tw/tags/</loc>
     <lastmod>2017-03-02T12:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

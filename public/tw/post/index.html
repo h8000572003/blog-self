@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>文章 | 工程師開發紀錄</title>
+    <title>文章 | 阿忠程式之路</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="The last theme you&#39;ll ever need. Maybe.">
     <meta name="generator" content="Hugo 0.101.0" />
@@ -29,8 +29,8 @@
 
     
     
-      <link href="/blog-self/tw/post/index.xml" rel="alternate" type="application/rss+xml" title="工程師開發紀錄" />
-      <link href="/blog-self/tw/post/index.xml" rel="feed" type="application/rss+xml" title="工程師開發紀錄" />
+      <link href="/blog-self/tw/post/index.xml" rel="alternate" type="application/rss+xml" title="阿忠程式之路" />
+      <link href="/blog-self/tw/post/index.xml" rel="feed" type="application/rss+xml" title="阿忠程式之路" />
       
     
     
@@ -58,7 +58,7 @@
   <div class="flex-l justify-between items-center center">
     <a href="/blog-self/" class="f3 fw2 hover-white no-underline white-90 dib">
       
-        工程師開發紀錄
+        阿忠程式之路
       
     </a>
     <div class="flex-l items-center">
@@ -86,14 +86,8 @@
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/blog-self/tw/tags/" title="標籤 頁">
-              標籤
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/blog-self/tw/" title="技術 頁">
-              技術
+            <a class="hover-white no-underline white-90" href="/blog-self/tw/" title="記事 頁">
+              記事
             </a>
           </li>
           
@@ -143,6 +137,47 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">文章</span>
     <h1 class="f3 near-black">
+      <a href="/blog-self/tw/post/tdd/" class="link black dim">
+        Tdd
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      「撰寫測試」已成為現代軟體開發的顯學。隨著軟體產品的規模越長越大，在不斷增加新功能、重構優化既有程式碼的過程，如何確保軟體既有功能不受影響，又能減少繁瑣的人工作業，靠的就是自動化測試。尤其當系統的業務邏輯龐大繁瑣，平時養成撰寫測試的好習慣更是保障軟體品質的關鍵。
+測試重要性 越早進行測試，未來負擔越小!測試是永遠避不了的，透過單元測試可完成持續性遞迴測試，保證業務邏輯正確，測試推到後面去辛苦遽增，測試範圍大增 ex: 單元測試：可以很明確簡單完成測試(僅測關鍵業務邏輯) 整合測試：基本上很困難透過測試(需依賴外部來源) 測試永遠少不了，測試越早執行負擔越小，工程師常常想反正我寫完還是要測試，那時候在手動測試即可，
+前言 TDD屬於單元測試測試類型(僅測試該程式功能)，當測試service時， 不須考慮model(資料/外部)，僅測試service，常常使用假的替代(策略模型)，不依賴外部資源，表示在任何環境下都可以執行!
+graph TD; Controller--&gt;service service --&gt; model 在一般專案中常常發現，幾乎沒發現有撰寫程式碼一般原因如下：
+寫不出來(沒人教過) 有人教過，但是寫錯方式 前輩說寫測是很花時間沒有效益。 寫測試花費時間太多，可成會多花一倍時間? AAA概念 Arrange: 先設定我們在這次測試中，所預期的結果(個案) Act: 就是我們想要測試的 function 或 method Assert: 確認在 Action 發生後，確認在執行了想要測試 function 或 method 後，的確符合我們在 Arrange 階段設定的目標 A [] B &gt;C
+步驟 撰寫測試目的與優點 從測試出發，才比較容易寫出可以測試之程式 容易真正關鍵核心業務 不依賴外部系統、來源或資料庫。 才能滿足CI/CD需求(每次打包之程式都有經過驗證確認) 使用TDD撰寫測試程式 重測試開始寫，因對應物件尚未建立所以無法編譯 完成程式可編譯即可 撰寫通過個案程式 重構原有程式 每次修改都重新執行確認保持綠燈(程式有驗證) graph LR; red(新增測試個案-編譯不過)--&gt;test(測試剛剛新個案-紅燈); test --&gt; green(撰寫可以通過之程式-綠燈) green --&gt; refac(重構) refac --&gt; red 經典案例 Tennis Kata 一個完整的網球比賽分成：
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">文章</span>
+    <h1 class="f3 near-black">
+      <a href="/blog-self/tw/post/telegram/" class="link black dim">
+        Telegram
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Telegram是跨平台的即時通訊軟體，其用戶端是自由及開放原始碼軟體，但伺服器端是專有軟體。使用者可以相互交換加密與自毀訊息，傳送相片、影片等所有類型檔案。官方提供手機版、電腦版和網頁版等多種平台用戶端；同時官方開放應用程式介面，因此擁有許多第三方的用戶端可供選擇
+專案使用目的 透過即時訊息，即刻掌握系統狀態 透過指令進行操作服務 程式設計規則 建立BotCmdService(機器人指令服務)，註冊機器人命令規則，透過呼叫BotCmdService.exeCmd方式處理該命令方式。
+/** * 機器人命令 * @author andy * */ public interface IBotCmd { /** * * @param arg 命令 * @param context 訊息上下文 * @return 命令回訊方式 */ BotCmdResponse execute(String arg, BotContext context); } 
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">文章</span>
+    <h1 class="f3 near-black">
       <a href="/blog-self/tw/post/hcp/" class="link black dim">
         Hitachi Content Platform 雲端平台
       </a>
@@ -157,37 +192,33 @@
 
         </div>
       
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">文章</span>
-    <h1 class="f3 near-black">
-      <a href="/blog-self/tw/post/common-prop/" class="link black dim">
-        代碼元件
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      通用型代碼元件 解決問題：處理多來源之代碼元件統一方式處理， 並提供並提供代碼使用範圍，使用範圍定義為如下
-資料範圍(CacheLoader&lt;String, List &lt;IProperties&gt;&gt;) 來源定義範圍內(例如：原有 A‘B與C 僅能修改此範圍內，且無法刪除，刪除則恢復預設值) 使用範圍:程式上使用參數，不得刪除
-可擴充類型(例如：原有 A‘B與C還能增加額外項目) 使用範圍:類似帳號資料，管理者資料無法刪除，且可以增加額外項目
-無基礎值(例如：原有 A‘B與C還能增加額外項目，且能全部刪除) 使用範圍: 資料可以任意清除
-快取方式(IPropertieServiceHolder) 定時清除 使用範圍:資料有可能更新,特定時間清除
-永久使用快取 使用範圍:資料永久不改變，沒有清除需要
-不使用快取 使用範圍:資料強調正確性，可不使用快取
-詳細說明參考 https://github.com/h8000572003/coomon-prooptics
-    </div>
-  </div>
-</div>
-
-        </div>
-      
-    </section></article>
+    </section>
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog-self/tw/post/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/blog-self/tw/post/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/blog-self/tw/post/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul></article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://h8000572003.github.io/blog-self/" >
-    &copy;  工程師開發紀錄 2022 
+    &copy;  阿忠程式之路 2022 
   </a>
     <div>
 <div class="ananke-socials">

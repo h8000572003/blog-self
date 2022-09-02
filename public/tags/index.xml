@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 工程師開發紀錄</title>
+    <title>Tags on 阿忠程式之路</title>
     <link>https://h8000572003.github.io/blog-self/tags/</link>
-    <description>Recent content in Tags on 工程師開發紀錄</description>
+    <description>Recent content in Tags on 阿忠程式之路</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 10 Aug 2022 20:05:29 +0800</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Aug 2022 23:05:43 +0800</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>scene</title>
-      <link>https://h8000572003.github.io/blog-self/tags/scene/</link>
-      <pubDate>Wed, 10 Aug 2022 20:05:29 +0800</pubDate>
+      <title>元件</title>
+      <link>https://h8000572003.github.io/blog-self/tags/%E5%85%83%E4%BB%B6/</link>
+      <pubDate>Mon, 29 Aug 2022 23:05:43 +0800</pubDate>
       
-      <guid>https://h8000572003.github.io/blog-self/tags/scene/</guid>
+      <guid>https://h8000572003.github.io/blog-self/tags/%E5%85%83%E4%BB%B6/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>元件</title>
-      <link>https://h8000572003.github.io/blog-self/tags/%E5%85%83%E4%BB%B6/</link>
-      <pubDate>Wed, 10 Aug 2022 20:05:29 +0800</pubDate>
+      <title>architecture</title>
+      <link>https://h8000572003.github.io/blog-self/tags/architecture/</link>
+      <pubDate>Sat, 27 Aug 2022 20:05:29 +0800</pubDate>
       
-      <guid>https://h8000572003.github.io/blog-self/tags/%E5%85%83%E4%BB%B6/</guid>
+      <guid>https://h8000572003.github.io/blog-self/tags/architecture/</guid>
       <description></description>
     </item>
     

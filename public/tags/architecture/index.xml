@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>內功 on 阿忠程式之路</title>
-    <link>https://h8000572003.github.io/blog-self/tw/tech/</link>
-    <description>Recent content in 內功 on 阿忠程式之路</description>
+    <title>architecture on 阿忠程式之路</title>
+    <link>https://h8000572003.github.io/blog-self/tags/architecture/</link>
+    <description>Recent content in architecture on 阿忠程式之路</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/tw/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Aug 2022 20:05:29 +0800</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SOLID設計</title>
       <link>https://h8000572003.github.io/blog-self/tw/tech/solid/</link>

@@ -1,12 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>工程師開發紀錄</title>
+    <title>阿忠程式之路</title>
     <link>https://h8000572003.github.io/blog-self/</link>
-    <description>Recent content on 工程師開發紀錄</description>
+    <description>Recent content on 阿忠程式之路</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 10 Aug 2022 20:05:29 +0800</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Aug 2022 08:55:48 +0800</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tdd</title>
+      <link>https://h8000572003.github.io/blog-self/tw/post/tdd/</link>
+      <pubDate>Tue, 30 Aug 2022 08:55:48 +0800</pubDate>
+      
+      <guid>https://h8000572003.github.io/blog-self/tw/post/tdd/</guid>
+      <description>「撰寫測試」已成為現代軟體開發的顯學。隨著軟體產品的規模越長越大，在不斷增加新功能、重構優化既有程式碼的過程，如何確保軟體既有功能不受影響，又能減少繁瑣的人工作業，靠的就是自動化測試。尤其當系統的業務邏輯龐大繁瑣，平時養成撰寫測試的好習慣更是保障軟體品質的關鍵。
+測試重要性 越早進行測試，未來負擔越小!測試是永遠避不了的，透過單元測試可完成持續性遞迴測試，保證業務邏輯正確，測試推到後面去辛苦遽增，測試範圍大增 ex: 單元測試：可以很明確簡單完成測試(僅測關鍵業務邏輯) 整合測試：基本上很困難透過測試(需依賴外部來源) 測試永遠少不了，測試越早執行負擔越小，工程師常常想反正我寫完還是要測試，那時候在手動測試即可，
+前言 TDD屬於單元測試測試類型(僅測試該程式功能)，當測試service時， 不須考慮model(資料/外部)，僅測試service，常常使用假的替代(策略模型)，不依賴外部資源，表示在任何環境下都可以執行!
+graph TD; Controller--&amp;gt;service service --&amp;gt; model 在一般專案中常常發現，幾乎沒發現有撰寫程式碼一般原因如下：
+寫不出來(沒人教過) 有人教過，但是寫錯方式 前輩說寫測是很花時間沒有效益。 寫測試花費時間太多，可成會多花一倍時間? AAA概念 Arrange: 先設定我們在這次測試中，所預期的結果(個案) Act: 就是我們想要測試的 function 或 method Assert: 確認在 Action 發生後，確認在執行了想要測試 function 或 method 後，的確符合我們在 Arrange 階段設定的目標 A [] B &amp;gt;C
+步驟 撰寫測試目的與優點 從測試出發，才比較容易寫出可以測試之程式 容易真正關鍵核心業務 不依賴外部系統、來源或資料庫。 才能滿足CI/CD需求(每次打包之程式都有經過驗證確認) 使用TDD撰寫測試程式 重測試開始寫，因對應物件尚未建立所以無法編譯 完成程式可編譯即可 撰寫通過個案程式 重構原有程式 每次修改都重新執行確認保持綠燈(程式有驗證) graph LR; red(新增測試個案-編譯不過)--&amp;gt;test(測試剛剛新個案-紅燈); test --&amp;gt; green(撰寫可以通過之程式-綠燈) green --&amp;gt; refac(重構) refac --&amp;gt; red 經典案例 Tennis Kata 一個完整的網球比賽分成：</description>
+    </item>
+    
+    <item>
+      <title>Telegram</title>
+      <link>https://h8000572003.github.io/blog-self/tw/post/telegram/</link>
+      <pubDate>Mon, 29 Aug 2022 23:05:43 +0800</pubDate>
+      
+      <guid>https://h8000572003.github.io/blog-self/tw/post/telegram/</guid>
+      <description>Telegram是跨平台的即時通訊軟體，其用戶端是自由及開放原始碼軟體，但伺服器端是專有軟體。使用者可以相互交換加密與自毀訊息，傳送相片、影片等所有類型檔案。官方提供手機版、電腦版和網頁版等多種平台用戶端；同時官方開放應用程式介面，因此擁有許多第三方的用戶端可供選擇
+專案使用目的 透過即時訊息，即刻掌握系統狀態 透過指令進行操作服務 程式設計規則 建立BotCmdService(機器人指令服務)，註冊機器人命令規則，透過呼叫BotCmdService.exeCmd方式處理該命令方式。
+/** * 機器人命令 * @author andy * */ public interface IBotCmd { /** * * @param arg 命令 * @param context 訊息上下文 * @return 命令回訊方式 */ BotCmdResponse execute(String arg, BotContext context); } </description>
+    </item>
+    
+    <item>
+      <title>SOLID設計</title>
+      <link>https://h8000572003.github.io/blog-self/tw/tech/solid/</link>
+      <pubDate>Sat, 27 Aug 2022 20:05:29 +0800</pubDate>
+      
+      <guid>https://h8000572003.github.io/blog-self/tw/tech/solid/</guid>
+      <description>SOLID設計 屬於良好架構的基礎核心觀念，其中主要描述五項原則
+SRP：單一職責原則
+軟體只有唯一的理由需要改變
+OCP：開放-封閉原則
+要使軟體意於改變要設計成可透過新增來改變這些需求的行為，而
+LSP：liskov替換原則
+建置軟體必須來自可互換的部分，這些部分必須遵守允許這些部分相呼替換的契約
+ISP：介面隔離原則
+避免使用者依賴不使用的東西
+DIP：依賴反向原則
+實作策略的高層程式碼不得依賴實作細節，細節應該依賴策略
+SRP單一職責原則 原描述為『一個模組應該只有一個，且只有一個理由會使其改變』，但後來發現使用者和利益關係者是原則提出的改變理由另外申述該原則『一個模組應該只對唯一的一個使用者或利益相關者負責』
+OCP開放封閉原則 一個軟體應對擴展是開放的，但修改是封閉的
+LSP Liskov替換原則 若對型態Ｓ的每個物件o1，都存在一個型態為T的物件o2，使得在所有針對T編寫的程式Ｐ，用o1替換o2後，程式Ｐ行為功能不變,則S是Ｔ的子型態
+ISP 介面隔離元則 你依賴的模組包含你所需要的，那就是有害的，對原始碼的依賴性這顯然是對的
+DIP 依賴反向原則 最靈活的設計就是原始碼依賴關係只涉及抽象不涉及具體實現</description>
+    </item>
+    
     <item>
       <title>Hitachi Content Platform 雲端平台</title>
       <link>https://h8000572003.github.io/blog-self/tw/post/hcp/</link>

@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>元件 on 工程師開發紀錄</title>
+    <title>元件 on 阿忠程式之路</title>
     <link>https://h8000572003.github.io/blog-self/tags/%E5%85%83%E4%BB%B6/</link>
-    <description>Recent content in 元件 on 工程師開發紀錄</description>
+    <description>Recent content in 元件 on 阿忠程式之路</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 10 Aug 2022 20:05:29 +0800</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/tags/%E5%85%83%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Aug 2022 23:05:43 +0800</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/tags/%E5%85%83%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Telegram</title>
+      <link>https://h8000572003.github.io/blog-self/tw/post/telegram/</link>
+      <pubDate>Mon, 29 Aug 2022 23:05:43 +0800</pubDate>
+      
+      <guid>https://h8000572003.github.io/blog-self/tw/post/telegram/</guid>
+      <description>Telegram是跨平台的即時通訊軟體，其用戶端是自由及開放原始碼軟體，但伺服器端是專有軟體。使用者可以相互交換加密與自毀訊息，傳送相片、影片等所有類型檔案。官方提供手機版、電腦版和網頁版等多種平台用戶端；同時官方開放應用程式介面，因此擁有許多第三方的用戶端可供選擇
+專案使用目的 透過即時訊息，即刻掌握系統狀態 透過指令進行操作服務 程式設計規則 建立BotCmdService(機器人指令服務)，註冊機器人命令規則，透過呼叫BotCmdService.exeCmd方式處理該命令方式。
+/** * 機器人命令 * @author andy * */ public interface IBotCmd { /** * * @param arg 命令 * @param context 訊息上下文 * @return 命令回訊方式 */ BotCmdResponse execute(String arg, BotContext context); } </description>
+    </item>
+    
     <item>
       <title>Hitachi Content Platform 雲端平台</title>
       <link>https://h8000572003.github.io/blog-self/tw/post/hcp/</link>

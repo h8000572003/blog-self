@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>技術 on 工程師開發紀錄</title>
+    <title>記事 on 阿忠程式之路</title>
     <link>https://h8000572003.github.io/blog-self/tw/</link>
-    <description>Recent content in 技術 on 工程師開發紀錄</description>
+    <description>Recent content in 記事 on 阿忠程式之路</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 10 Aug 2022 20:05:29 +0800</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Aug 2022 08:55:48 +0800</lastBuildDate><atom:link href="https://h8000572003.github.io/blog-self/tw/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>關於</title>
       <link>https://h8000572003.github.io/blog-self/tw/about/</link>
